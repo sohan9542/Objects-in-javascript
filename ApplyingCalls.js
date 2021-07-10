@@ -8,5 +8,16 @@ const person = {
     }
 }
 
-person.chargeBill(200);
-console.log(person.selery);
+// person.chargeBill(200);
+// console.log(person.selery);
+
+const SecondPerson = {
+    firstName : 'Mr',
+    lastName : "triplle R",
+    selery : 30000
+}
+
+const secondPersonSelery = person.chargeBill.bind(SecondPerson);
+secondPersonSelery(3000);
+
+console.log(SecondPerson);
