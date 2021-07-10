@@ -18,6 +18,8 @@ const SecondPerson = {
 }
 
 const secondPersonSelery = person.chargeBill.bind(SecondPerson);
-secondPersonSelery(3000);
+// secondPersonSelery(3000);
 
-console.log(SecondPerson);
+person.chargeBill.call(SecondPerson, 2000);
+person.chargeBill.apply(SecondPerson, [20000]);
+console.log(SecondPerson.selery);
